@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MainPageViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) MainPageViewController* mainPageVC;
 @end
 
 @implementation AppDelegate
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    sleep(2);
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.mainPageVC = [[MainPageViewController alloc]
+                      initWithNibName:nil
+                      bundle:nil];
+    self.window.rootViewController = self.mainPageVC;
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
