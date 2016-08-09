@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E45B2211D59E1ED00AE9269 /* FoodTracking-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodTracking-prefix.pch"; sourceTree = "<group>"; };
 		2EF85A3F1D5428B3005E0FF2 /* FoodTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF85A431D5428B3005E0FF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EF85A451D5428B3005E0FF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 				2EF85A561D5428B3005E0FF2 /* Info.plist */,
 				2EF85A4E1D5428B3005E0FF2 /* FoodTracking.xcdatamodeld */,
 				2EF85A431D5428B3005E0FF2 /* main.m */,
+				2E45B2211D59E1ED00AE9269 /* FoodTracking-prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -552,6 +554,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/FoodTracking-prefix.pch";
 				INFOPLIST_FILE = FoodTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigCat.FoodTracking;
@@ -565,6 +569,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/FoodTracking-prefix.pch";
 				INFOPLIST_FILE = FoodTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigCat.FoodTracking;

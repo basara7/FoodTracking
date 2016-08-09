@@ -16,6 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"食物最佳食用期提醒";
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    self.tableView.backgroundColor = RGBCOLOR(240, 240, 240);
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [self.tableView setTableFooterView:view];
+
+    
     // Do any additional setup after loading the view.
 }
 
